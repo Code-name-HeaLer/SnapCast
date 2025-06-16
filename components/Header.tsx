@@ -2,6 +2,8 @@ import { headers } from 'next/headers'
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link';
+import { ICONS } from '@/constants';
+import DropdownList from './DropdownList';
 
 interface SharedHeaderProps {
   subheader: string;
@@ -15,7 +17,7 @@ const Header = ({subheader, title, userImg}: SharedHeaderProps) => {
         <section className='header-container'>
             <div className="details">
                 {userImg && (
-                    <Image src={userImg || '/assets/images/dummy.jpg'} alt="user" width={66} height={66} className="rounded-full"/>
+                    <Image src={userImg} alt="user" width={66} height={66} className="rounded-full"/>
                 )}
 
                 <article>
@@ -29,7 +31,26 @@ const Header = ({subheader, title, userImg}: SharedHeaderProps) => {
                 <Image src="/assets/icons/upload.svg" alt='upload' width={16} height={16}/>
                 <span>Upload a Video</span>
                 </Link>
+                <div className="record">
+                <button className="primary-btn">
+                    <Image src={ICONS.record} alt='record' width={16} height={16}/>
+                    <span>Record a Video</span>
+                </button>
+                
+                </div>
             </aside>
+        </section>
+
+        <section className='search-filter'>
+            <div className="search">
+                <input 
+                type="text"
+                placeholder='Search for videos, tags, folders...'
+                />
+                <Image src="/assets/icons/search.svg" alt='search' width={16} height={16}/>
+            </div>
+
+            <DropdownList />
         </section>
     </header>
   )
