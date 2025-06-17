@@ -1,0 +1,6 @@
+{
+  "databaseURL": "https://HeaLer-Work-s-workspace-lder2u.eu-central-1.xata.sh/db/healer_snapcast",
+  "codegen": {
+    "output": "src/xata.ts"
+  }
+}

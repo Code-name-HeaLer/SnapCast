@@ -1,0 +1,17 @@
+{
+  "done": true,
+  "migration": {
+    "name": "mig_d18g47u0tgo19qmlu5bg",
+    "operations": [
+      {
+        "sql": {
+          "up": "CREATE SCHEMA \"bb_00000000000000000000000000_000000\";"
+        }
+      }
+    ]
+  },
+  "migrationType": "pgroll",
+  "name": "mig_d18g47u0tgo19qmlu5bg",
+  "schema": "public",
+  "startedAt": "2025-06-17T05:50:24.072323Z"
+}
