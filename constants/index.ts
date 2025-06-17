@@ -136,4 +136,4 @@ export const dummyCards = [
     visibility: "public",
     duration: 345,
   }
-]
+] 
