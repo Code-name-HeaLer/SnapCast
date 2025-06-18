@@ -1,6 +1,6 @@
 # 🎥 SnapCast – Record. Upload. Share.
 
-Welcome to **ScreenSpark**, a powerful, full-stack video recording and sharing platform inspired by Loom, crafted with passion, precision, and cutting-edge tech. Built with **Next.js**, **Bunny.net**, and **Xata**, this app lets users capture screens, manage videos, and share them in one seamless experience.
+Welcome to **SnapCast**, a powerful, full-stack video recording and sharing platform inspired by Loom, crafted with passion, precision, and cutting-edge tech. Built with **Next.js**, **Bunny.net**, and **Xata**, this app lets users capture screens, manage videos, and share them in one seamless experience.
 
 ## 🤖 About the Project
 
