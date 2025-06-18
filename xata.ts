@@ -2,14 +2,7 @@
 import { buildClient } from "@xata.io/client";
 import type {
   BaseClientOptions,
-  SchemaInference,
-  XataRecord,
 } from "@xata.io/client";
-
-const tables = [] as const;
-
-export type SchemaTables = typeof tables;
-export type InferredTypes = SchemaInference<SchemaTables>;
 
 export type DatabaseSchema = {};
 
@@ -18,11 +11,13 @@ const DatabaseClient = buildClient();
 const defaultOptions = {
   databaseURL:
     "https://HeaLer-Work-s-workspace-lder2u.eu-central-1.xata.sh/db/healer_snapcast",
+    apiKey: process.env.XATA_API_KEY,
+    branch: 'main'
 };
 
 export class XataClient extends DatabaseClient<DatabaseSchema> {
   constructor(options?: BaseClientOptions) {
-    super({ ...defaultOptions, ...options }, tables);
+    super({ ...defaultOptions, ...options });
   }
 }
 
